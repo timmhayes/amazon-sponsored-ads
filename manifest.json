@@ -1,0 +1,16 @@
+{
+  "name": "amazon-sponsored-ads",
+  "action": {},
+  "manifest_version": 3,
+  "version": "0.1",
+  "description": "Chrome extension used to mute sponsored listings on Amazon.com",
+  "permissions": [
+    "scripting"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://*.amazon.com/*"],
+      "js": ["content-script.js"]
+    }
+  ]
+}
